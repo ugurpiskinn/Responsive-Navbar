@@ -11,7 +11,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="nav-bar">
+      <div id="nav-bar" class="container responsive">
         <a href="#" class="logo">Logo</a>
         <nav class="nav">
           <ul class="nav-items">
@@ -20,9 +20,15 @@
             <li class="nav-item"><a href="#">Skills</a></li>
             <li class="nav-item"><a href="#">Work</a></li>
             <li class="nav-item"><a href="#">Contact</a></li>
+            <li class="nav-item">
+              <a href="#" onclick="displayMenu()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
+    <script src="js/index.js"></script>
   </body>
 </html>

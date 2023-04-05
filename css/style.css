@@ -1,1 +1,22 @@
 /** @format */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #b2b2b2; }
+
+.header {
+  width: 100%;
+  background-color: #3c4048;
+  padding: 0.8rem 1.6rem; }
+  .header .logo {
+    font-size: 2rem;
+    font-weight: 500; }
+  .header .nav {
+    display: inline-block;
+    width: calc(100% - 10rem);
+    text-align: right; }
+    .header .nav .nav-item {
+      display: inline-block;
+      margin: 0 1rem; }

@@ -1,1 +1,30 @@
 /** @format */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+$header-bg-color: #3c4048;
+$txt-color: #b2b2b2;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: $txt-color;
+}
+
+.header {
+  width: 100%;
+  background-color: $header-bg-color;
+  padding: 0.8rem 1.6rem;
+  .logo {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .nav {
+    display: inline-block;
+    width: calc(100% - 10rem);
+    text-align: right;
+    .nav-item {
+      display: inline-block;
+      margin: 0 1rem;
+    }
+  }
+}
