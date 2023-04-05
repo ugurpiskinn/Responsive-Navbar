@@ -1,18 +1,18 @@
 /** @format */
 
-const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
+const navItemBar = document.querySelector(".navItemBar");
+const navItems = document.querySelectorAll(".navItem");
 const hamburger = document.querySelector(".hamburger");
 const closeIcon = document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
 
 function toggleMenu() {
-  if (menu.classList.contains("showMenu")) {
-    menu.classList.remove("showMenu");
+  if (navItemBar.classList.contains("showBar")) {
+    navItemBar.classList.remove("showBar");
     closeIcon.style.display = "none";
     menuIcon.style.display = "block";
   } else {
-    menu.classList.add("showMenu");
+    navItemBar.classList.add("showBar");
     closeIcon.style.display = "block";
     menuIcon.style.display = "none";
   }
@@ -20,6 +20,6 @@ function toggleMenu() {
 
 hamburger.addEventListener("click", toggleMenu);
 
-menuItems.forEach(function (menuItem) {
-  menuItem.addEventListener("click", toggleMenu);
+navItems.forEach(function (navItem) {
+  navItem.addEventListener("click", toggleMenu);
 });
