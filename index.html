@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/base.css" />
     <title>Responsive Navbar</title>
   </head>
   <body>
@@ -15,28 +16,16 @@
       <div id="nav-bar" class="container responsive">
         <a href="#" class="logo">Logo</a>
         <nav class="nav">
-          <ul class="nav-items">
-            <li class="nav-item">
-              <a href="#" class="btn btn-primary">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="btn btn-primary">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="btn btn-primary">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="btn btn-primary">Work</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="btn btn-primary">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" onclick="displayMenu()">
-                <i class="fa fa-bars"></i>
-              </a>
-            </li>
+          <ul class="menu">
+            <li><a class="menuItem" href="#">Home</a></li>
+            <li><a class="menuItem" href="#">Profile</a></li>
+            <li><a class="menuItem" href="#">About</a></li>
+            <li><a class="menuItem" href="#">Contacts</a></li>
           </ul>
+          <button class="hamburger">
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+          </button>
         </nav>
       </div>
     </header>

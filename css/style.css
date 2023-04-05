@@ -1,5 +1,6 @@
 /** @format */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @font-face {
   font-family: myFont;
   src: url(../font/SF-Pro.ttf); }
@@ -10,22 +11,77 @@
   text-decoration: none;
   list-style: none;
   color: #b2b2b2;
-  font-family: myFont; }
+  font-family: myFont;
+  box-sizing: border-box; }
 
 .header {
   width: 100%;
   background-color: #3c4048;
-  padding: 0.8rem 1.6rem; }
-  .header .logo {
-    font-size: 2rem;
-    font-weight: 500; }
-  .header .nav {
-    display: inline-block;
-    width: calc(100% - 10rem);
-    text-align: right;
-    vertical-align: middle; }
-    .header .nav .nav-item {
-      display: inline-block;
-      margin: 0 1rem; }
-    .header .nav .nav-item:last-child {
-      display: none; }
+  padding: 0.8rem 1.6rem;
+  position: fixed;
+  z-index: 1;
+  top: 0; }
+
+.logo {
+  font-size: 2rem;
+  font-weight: 500; }
+
+.nav {
+  display: inline-block;
+  width: calc(100% - 11rem);
+  text-align: left; }
+
+.nav-item:last-child {
+  display: none; }
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer; }
+
+.closeIcon {
+  display: none; }
+
+.showItem {
+  transform: translateY(0); }
+
+.menuItem {
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  color: white; }
+
+.menuItem:hover {
+  text-decoration: underline; }
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: none;
+  background: #3c4048;
+  cursor: pointer; }
+
+.closeIcon {
+  display: none; }
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #3c4048;
+  color: white;
+  list-style: none;
+  padding-top: 4rem; }
+
+.showMenu {
+  transform: translateY(0); }
