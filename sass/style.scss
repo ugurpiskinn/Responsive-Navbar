@@ -2,12 +2,17 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
 $header-bg-color: #3c4048;
 $txt-color: #b2b2b2;
+@font-face {
+  font-family: myFont;
+  src: url(../font/SF-Pro.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
   color: $txt-color;
+  font-family: myFont;
 }
 
 .header {
@@ -22,9 +27,13 @@ $txt-color: #b2b2b2;
     display: inline-block;
     width: calc(100% - 10rem);
     text-align: right;
+    vertical-align: middle;
     .nav-item {
       display: inline-block;
       margin: 0 1rem;
+    }
+    .nav-item:last-child {
+      display: none;
     }
   }
 }

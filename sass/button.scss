@@ -1,0 +1,25 @@
+/** @format */
+$btn-1: #3c4048;
+$btn-2: #b2b2b2;
+.btn {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 7px 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  transition-duration: 0.6s;
+}
+.btn-primary {
+  background: $btn-1;
+  color: $btn-2;
+  border: 2px solid $btn-1;
+}
+
+.btn-primary:hover {
+  background: $btn-2;
+  color: $btn-1;
+  border: 2px solid $btn-1;
+}
