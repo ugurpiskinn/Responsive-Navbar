@@ -1,3 +1,5 @@
+$header-bg-color: #3c4048;
+$txt-color: #b2b2b2;
 @media (min-width: 576px) {
   .container {
     margin: 0 auto;
@@ -30,5 +32,64 @@
   .container {
     margin: 0 auto;
     width: 1320px;
+  }
+}
+.navItems {
+  display: inline-block;
+}
+.navItem {
+  display: inline-block;
+  margin: 0 1rem;
+}
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 830px) {
+  .navItems {
+    display: block;
+    text-align: left;
+  }
+  .navItem {
+    display: block;
+    margin: 2rem 4rem;
+    color: white;
+  }
+  .navItem:hover {
+    text-decoration: underline;
+  }
+  .hamburger {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: none;
+    background: $header-bg-color;
+    cursor: pointer;
+  }
+
+  .closeIcon {
+    display: none;
+  }
+
+  .navItemBar {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: $header-bg-color;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+
+  .showBar {
+    transform: translateY(0);
   }
 }
